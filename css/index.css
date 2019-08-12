@@ -65,8 +65,9 @@ h1, h2, h3, h4, h5 {
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-/* @media(max-width: 800px){
+@media(max-width: 800px){
    .navigation{
+       display: flex;
        flex-direction: column;
    } 
 
@@ -78,22 +79,51 @@ h1, h2, h3, h4, h5 {
    .header-img{
        display: none;
    }
+
+   .logo {
+       border-bottom: 1px solid black;
+   }
 }
 
 @media(max-width: 500px){
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
 
-} */
+    nav.navbar {    
+        display: flex;
+        flex-direction: column
+        border-bottom: 1px solid black;
+    }
+
+    .phase1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-img{
+        display: none;
+    }
+
+}
+
+.logo {
+    background-color: pink;
+}
 .navigation {
-	justify-content: space-around;
+	justify-content: space-between;
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    /* background-color: magenta; */
 }
 
 .navbar a {
 	color: grey;
 	text-decoration: none;
 	font-size: 16px;
-	padding: 60px ;
+    padding-left: 100px ;
+    /* background-color: pink; */
 }
 
 nav.navbar {
@@ -186,4 +216,5 @@ hr{
 
 .container {
     padding: 20px 30px;
+    margin: 10px;
 }
